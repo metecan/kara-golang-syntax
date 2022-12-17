@@ -1,0 +1,40 @@
+{
+    "name": "kara-golang-syntax",
+    "displayName": "Kara Golang Syntax",
+    "description": "Kara Golang Syntax",
+    "publisher": "metecan",
+    "version": "1.0.0",
+    "icon": "images/spellIcon.png",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/metecan/kara-golang-syntax.git"
+    },
+    "engines": {
+        "vscode": "^1.74.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "go",
+                "aliases": [
+                    "go",
+                    "go"
+                ],
+                "extensions": [
+                    ".go"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "go",
+                "scopeName": "source.go",
+                "path": "./syntaxes/go.tmLanguage.json"
+            }
+        ]
+    }
+}
